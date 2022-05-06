@@ -4,13 +4,15 @@ int email_Validity_Check(char Email[41]);
 
 void main()
 {
-    puts("please enter an Email to check the validity:");
+
     char Email[41];
-    gets(Email);
+
     int email_Validity_Check_int ;
     int loopCounter ;
     for(loopCounter = 0 ; loopCounter < 1 ; loopCounter++)
     {
+        puts("please enter an Email to check the validity:");
+        gets(Email);
         email_Validity_Check_int = email_Validity_Check(Email);
         if(email_Validity_Check_int == 1)
         {
